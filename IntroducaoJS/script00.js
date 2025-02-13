@@ -1,3 +1,4 @@
+//tipos de dados
 const texto = "Olá, Mundo!!";
 var boasvindas = "Bem-Vindos, Alunos de JS";
 boasvindas = "Boas Vindas Alunos";
@@ -28,4 +29,4 @@ nota = 8; // reatribuição
 var nota = 9; // posso reescrever a atribuição
 
 const fixo = 42; // atribuição
-// fixo = 43;>> erro - não pode reescrever o valor de uma const, piis já é fixo
+// fixo = 43;>> erro - não pode reescrever o valor de uma const, pois já é fixo
