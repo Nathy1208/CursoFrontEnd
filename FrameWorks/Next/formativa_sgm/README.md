@@ -18,6 +18,7 @@
 
 - **Diagrama de Classes**
 
+```mermaid
 classDiagram
     class Usuario {
         +int id
@@ -47,10 +48,12 @@ classDiagram
     Usuario "1" --o "N" OrdemServico : cria/atua
     Equipamento "1" --o "N" OrdemServico : associado
 
+```
 -------
 
 - **Diagrama de Casos de Uso**
 
+```mermaid
 usecaseDiagram
     actor Tecnico as T
     actor Gestor as G
@@ -76,10 +79,12 @@ usecaseDiagram
     A --> UC1
     A --> UC5
 
+```
 --------
 
 - Diagrama de Fluxo
 
+```mermaid
 flowchart TD
     A[Usuário acessa tela de Login] --> B[Inserir email e senha]
     B --> C{Credenciais válidas?}
@@ -87,6 +92,8 @@ flowchart TD
     C -- Sim --> E[Gerar JWT Token]
     E --> F[Redirecionar para Dashboard]
     F --> G[Exibir visão geral: Ordens de serviço abertas, em andamento e concluídas]
+
+```
 
 
 ## Análise de Risco
