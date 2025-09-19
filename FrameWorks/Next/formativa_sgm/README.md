@@ -64,30 +64,19 @@ classDiagram
 - **Diagrama de Casos de Uso**
 
 ```mermaid
-usecaseDiagram
-    actor Tecnico as T
-    actor Gestor as G
-    actor Administrador as A
+flowchart TD
+    T[Técnico] --> UC1[Login no sistema]
+    T --> UC2[Visualizar Dashboard]
+    T --> UC3[Gerenciar Ordens de Serviço]
 
-    rectangle Sistema {
-        usecase UC1 as "Login no sistema"
-        usecase UC2 as "Visualizar Dashboard"
-        usecase UC3 as "Gerenciar Ordens de Serviço"
-        usecase UC4 as "Gerenciar Equipamentos"
-        usecase UC5 as "Gerenciar Usuários"
-    }
-
-    T --> UC1
-    T --> UC2
-    T --> UC3
-
-    G --> UC1
+    G[Gestor] --> UC1
     G --> UC2
     G --> UC3
-    G --> UC4
+    G --> UC4[Gerenciar Equipamentos]
 
-    A --> UC1
-    A --> UC5
+    A[Administrador] --> UC1
+    A --> UC5[Gerenciar Usuários]
+
 
 ```
 --------
