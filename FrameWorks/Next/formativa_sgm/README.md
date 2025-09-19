@@ -71,6 +71,7 @@ classDiagram
 - **Diagrama de Casos de Uso**
 
 ```mermaid
+<<<<<<< HEAD
 graph TD
     subgraph Sistema de Gestão de Manutenção (SGM)
         uc1("Fazer Login")
@@ -100,6 +101,20 @@ graph TD
     uc2 --|> uc1 : include
     uc4 --|> uc1 : include
     uc5 --|> uc1 : include
+=======
+flowchart TD
+    T[Técnico] --> UC1[Login no sistema]
+    T --> UC2[Visualizar Dashboard]
+    T --> UC3[Gerenciar Ordens de Serviço]
+
+    G[Gestor] --> UC1
+    G --> UC2
+    G --> UC3
+    G --> UC4[Gerenciar Equipamentos]
+
+    A[Administrador] --> UC1
+    A --> UC5[Gerenciar Usuários]
+>>>>>>> 26152a66774fac5c6ee890cd8294e58d9f4b74de
 
 ```
 
